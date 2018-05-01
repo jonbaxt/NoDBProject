@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans');
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.App-header {
+  background-color: #1F2F2C;
+  height: 20%;
+  font-family: 'Black Han Sans', sans-serif;
+  text-align: center;
+  color: white;
+  display:  flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.App-title {
+  font-size: 5em;
+}
+
+.greeting>p{
+  font-size: 2em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.image-top{
+  display: flex;
+  justify-content: center;
+  background: #384F49;
+  text-align: center;
+}
+
+.displayarea{
+  /* height: 250vh; */
+  width: 100%;
+  display: flex;
+  justify-content: start;
+}
+
+.list-container{
+  background: #56766F;
+  border: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+
+.selectContainer {
+  background: #ACBDB9;
+  height: 30%;
+  border-style: outset 5px black;
+}
+
+.textContainer {
+  background: #ACBDB9;
+  border-style: outset 5px black;
+
+
+}
+.textContainerId {
+  background: #ACBDB9;
+  border-style: outset 5px black;
+  width: 20px;
+  
+
+}
+
+.imageresize{
+  height: 400px;
+}
+
+.foot{
+  background: #1076C4;
+  color: white;
+  font-size: 25px;
+}
