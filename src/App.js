@@ -25,7 +25,7 @@ class App extends Component {
     axios.get('./api/games-data')
       .then((response) => {
         this.setState({ games_data: response.data })
-        console.log( response.data )
+        // console.log( response.data )
       })
       .catch((errMess) => console.log(errMess));
   }

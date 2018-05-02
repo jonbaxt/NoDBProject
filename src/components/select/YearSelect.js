@@ -25,7 +25,7 @@ export default class YearSelect extends Component {
     render() {
         function createYears() {
             let options = [];
-            for (var i = 2018; i > 1959; i--) {
+            for (var i = 2018; i > 1974; i--) {
                 options.push(<option key={i} value={i}>{i}</option>)
             }
             return options;

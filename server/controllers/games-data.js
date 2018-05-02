@@ -60,6 +60,7 @@ let games_data = [
     'cover_art': 'https://upload.wikimedia.org/wikipedia/en/thumb/3/3a/Diablo_Coverart.png/220px-Diablo_Coverart.png'}
 ]
 
+// let pokemonDatabase = [];
 
 module.exports = {
     read: (req, res) => {                 //GET
@@ -114,20 +115,27 @@ module.exports = {
         // axios.get(`http://thegamesdb.net/api/GetGamesList.php?name=` + req.params.game)
         // axios.get(`https://www.giantbomb.com/api/characters/?api_key=168e3c03a51fd71e30bdcb9bf65bc258d8670c48&field_list=deck`)
         // axios.get(`https://swapi.co/` + req.params.game)
-        axios.get(`https://swapi.co/api/people`)
+        
+        
+        // console.log(req.params)        
+        axios.get(`https://swapi.co/api/people/`)
         .then( (element ) => {
             res.status(200).send(element.data)
         }
         )
 
-    },
+    } /*,
     pokemon: (req, res) => {
-        axios.get(`http://pokeapi.co/api/v2/pokemon/25`)
+        for(var i=1; i<2; i++){
+        axios.get(`http://pokeapi.co/api/v2/pokemon/${i}`)
         .then( (element ) => {
-            res.status(200).send(element.data)
+            pokemonDatabase.push(element.data.name)
+            console.log(pokemonDatabase)
 
         })
-
-
+        // res.status(200).send(element.data)
     }
+    
+
+    }*/
 }

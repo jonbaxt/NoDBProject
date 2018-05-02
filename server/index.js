@@ -18,10 +18,9 @@ app.put('/api/games-data', ac.update);
 
 app.delete('/api/games-data/:id', ac.remove);
 
-app.get(`/api/pokemon`, ac.pokemon)
+app.get( '/api/people/:starWarsKeyWord', ac.starwars);
 
-app.get( '/api/:starWarsKeyWord', ac.starwars);
-
+// app.get(`/api/:pokemon`, ac.pokemon);
 
 
 const port = 3002;
