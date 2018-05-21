@@ -15,7 +15,7 @@ export default class FromWeb extends Component{
 
 componentDidMount(){
         const userInput = 'people/';
-    axios.get('/api/people/' + userInput)
+    axios.get('/api/startWars/people/' + userInput)
     .then( (elements) => {
         let saveArray = elements.data.results
         // console.log(saveArray)
